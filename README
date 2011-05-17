@@ -1,0 +1,20 @@
+
+This extension for eZ Publish provides support of OpenGraph tags for facebook.
+
+Version : -
+Status : developement
+
+
+Why this extension ?
+----------------------
+You may know that another extension with the same goal exists (ngopengraph).
+However the implementation is different on a few points :
+- jcopengraph is based on an datatype that you can add at each class
+- this datatype allows dynamic changes for each classes and even content object (by overriding class values)
+- as working with attributes, an attribute_view_gui will provide tag generation that will be send
+  to pagelayout using the persistent variable (through ezpagedata_set)
+- this means that this extension avoid any unneeded node fetch at the pagelayout level (this is the main
+  difference with ngopengraph, at least the main one regarding best practices).
+- 99% of the configuration is done class by class directly in the administration interface
+- almost no ini configuration
+
