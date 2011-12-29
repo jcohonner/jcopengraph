@@ -12,11 +12,11 @@ class jcOpenGraphClassAttributeTag extends jcObject
 	 * parent = information is taken from parent object 
 	 * object_name = name of the content object for title
 	 */
-	const TAG_SELECTION_METHOD_DISABLED = 'jcop_disabled';
-	const TAG_SELECTION_METHOD_MANUAL	= 'jcop_manual';
-	const TAG_SELECTION_METHOD_ROOT		= 'jcop_root';
-	const TAG_SELECTION_METHOD_PARENT	= 'jcop_parent';
-	const TAG_SELECTION_METHOD_NAME		= 'jcop_object_name';
+	const TAG_SELECTION_METHOD_DISABLED = 'disabled';
+	const TAG_SELECTION_METHOD_MANUAL	= 'manual';
+	const TAG_SELECTION_METHOD_ROOT		= 'root';
+	const TAG_SELECTION_METHOD_PARENT	= 'parent';
+	const TAG_SELECTION_METHOD_NAME		= 'object_name';
 	
 	
 	/**
@@ -98,7 +98,7 @@ class jcOpenGraphClassAttributeTag extends jcObject
 	}
 	
 	protected $Tag;
-	protected $Title;
+	protected $TagName;
 	protected $Selection;
 	protected $SelectionFallback=false;
 	protected $AllowManualOverride;

@@ -44,14 +44,14 @@
 		<td>
 			<select name="ContentClass_jcog_selection_{$class_attribute.id}[{$tag.tag}]">
 
-				<option value="jcop_disabled" {if $tag.selection|eq("jcop_disabled")} selected="selected"{/if}>{'Disabled'|i18n('jcopengraph/class/datatype')}</option>
-				<option value="jcop_parent" {if $tag.selection|eq("jcop_parent")} selected="selected"{/if}>{'Parent value'|i18n('jcopengraph/class/datatype')}</option>
-				<option value="jcop_root" {if $tag.selection|eq("jcop_root")} selected="selected"{/if}>{'Site root value'|i18n('jcopengraph/class/datatype')}</option>
+				<option value="disabled" {if $tag.selection|eq("disabled")} selected="selected"{/if}>{'Disabled'|i18n('jcopengraph/class/datatype')}</option>
+				<option value="parent" {if $tag.selection|eq("parent")} selected="selected"{/if}>{'Parent value'|i18n('jcopengraph/class/datatype')}</option>
+				<option value="root" {if $tag.selection|eq("root")} selected="selected"{/if}>{'Site root value'|i18n('jcopengraph/class/datatype')}</option>
 				{if or($tag.tag|eq('og:title'),$tag.tag|eq('og:site_name'))}
-					<option value="jcop_object_name" {if $tag.selection|eq("object_name")} selected="selected"{/if}>{'Content name'|i18n('jcopengraph/class/datatype')}</option>
+					<option value="object_name" {if $tag.selection|eq("object_name")} selected="selected"{/if}>{'Content name'|i18n('jcopengraph/class/datatype')}</option>
 				{/if}
 				{if $tag.allow_manual}
-					<option value="jcop_manual" {if $tag.selection|eq("jcop_manual")} selected="selected"{/if}>{'Manual'|i18n('jcopengraph/class/datatype')}</option>
+					<option value="manual" {if $tag.selection|eq("manual")} selected="selected"{/if}>{'Manual'|i18n('jcopengraph/class/datatype')}</option>
 				{/if}
 				
 				{foreach $class_attribute_list as $attribute}
